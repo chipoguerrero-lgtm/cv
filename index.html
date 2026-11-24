@@ -59,9 +59,15 @@
   footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;color:var(--soft);font-size:.82rem;margin-top:1.5rem}
 
   /* high-contrast mode */
-  body.hc{--ink:#000;--soft:#000;--line:#000;--bg:#fff;--card:#fff;--red:#a00000;--red-dark:#7a0000;--tint:#fff}
-  body.hc .chips li{border:2px solid #000;color:#000}
+  body.hc{--ink:#fff;--soft:#fff;--line:#fff;--bg:#000;--card:#000;--red:#ffd400;--red-dark:#ffd400;--charcoal:#000;--tint:#000}
+  body.hc h2{color:#ffd400}
+  body.hc .chips li{border:2px solid #ffd400;color:#ffd400}
   body.hc a{text-decoration-thickness:2px}
+  body.hc .bar{border-bottom:2px solid #ffd400}
+  body.hc .bar button{border-color:#fff}
+  body.hc .bar button[aria-pressed="true"]{background:#ffd400;border-color:#ffd400;color:#000}
+  body.hc .hex{background:#ffd400}
+  body.hc .hex span,body.hc .hex span b{color:#000}
 
   @media (max-width:640px){
     header.hero{grid-template-columns:1fr;text-align:left}
